@@ -5,3 +5,5 @@ logging:
 app:
   users:
     local: 3b5f25f50473a911db3d830a3378bb0f
+    test: 052eec33bb497281ca10e07e46a2d24b
+    live: 848897df88f9ef1923183e1860eb37a2
