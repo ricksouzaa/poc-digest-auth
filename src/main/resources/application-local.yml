@@ -1,0 +1,7 @@
+logging:
+  level:
+    org.springframework.security: TRACE
+
+app:
+  users:
+    local: 3b5f25f50473a911db3d830a3378bb0f
