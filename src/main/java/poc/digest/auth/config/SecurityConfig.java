@@ -19,11 +19,10 @@ public class SecurityConfig {
   private final UserDetailsService userDetailsService;
 
   DigestAuthenticationEntryPoint digestAuthenticationEntryPoint() {
-    DigestAuthenticationEntryPoint result = new DigestAuthenticationEntryPoint();
-    result.setRealmName("REALM");
-    result.setKey("12345");
-    result.setNonceValiditySeconds(3600);
-    return result;
+    DigestAuthenticationEntryPoint entryPoint = new DigestAuthenticationEntryPoint();
+    entryPoint.setRealmName("REALM");
+    entryPoint.setKey("12345");
+    return entryPoint;
   }
 
   DigestAuthenticationFilter digestAuthenticationFilter() {
